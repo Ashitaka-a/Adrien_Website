@@ -1,0 +1,36 @@
+.poster {
+    position: relative;
+    height: 100%;
+    max-width: 1600px;
+
+    &__picture {
+        position: fixed;
+        width: 100%;
+        max-width: 1600px;
+        height: 100%;
+
+        img {
+            position: relative;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .poster__picture {
+            bottom: 10%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .poster__picture {
+            bottom: 5%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .poster__picture {
+            bottom: 2%;
+        }
+    }
+}
