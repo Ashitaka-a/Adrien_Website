@@ -4,33 +4,32 @@
     max-width: 1600px;
 
     &__picture {
-        position: fixed;
-        width: 100%;
-        max-width: 1600px;
-        height: 100%;
+        position: absolute;
+
 
         img {
             position: relative;
             width: 100%;
             object-fit: contain;
+            transition: transform .9s cubic-bezier(0.165, 0.84, 0.44, 1);
         }
     }
 
-    @media (max-width: 1024px) {
-        .poster__picture {
-            bottom: 10%;
-        }
-    }
+    // @media (max-width: 1024px) {
+    //     .poster__picture {
+    //         bottom: 10%;
+    //     }
+    // }
 
-    @media (max-width: 768px) {
-        .poster__picture {
-            bottom: 5%;
-        }
-    }
+    // @media (max-width: 768px) {
+    //     .poster__picture {
+    //         bottom: 5%;
+    //     }
+    // }
 
-    @media (max-width: 480px) {
-        .poster__picture {
-            bottom: 2%;
-        }
-    }
+    // @media (max-width: 480px) {
+    //     .poster__picture {
+    //         bottom: 2%;
+    //     }
+    // }
 }
