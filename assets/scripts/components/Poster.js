@@ -4,6 +4,7 @@ let rafId;
 
 function animateParallax() {
   currentScroll += (targetScroll - currentScroll) * 0.1;
+  currentScroll = parseFloat(currentScroll.toFixed(0)); // arrondi à 1 chiffre après la virgule
 
   handleParallaxEffect(".poster__pictureartist", 0.2, currentScroll);
   handleParallaxEffect(".poster__picture", 0.6, currentScroll);
