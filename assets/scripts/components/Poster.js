@@ -1,3 +1,5 @@
+let ticking = false;
+
 function handleParallaxEffect(selector, speedFactor) {
   const scrollY = window.scrollY;
   const parallaxElement = document.querySelector(selector);
@@ -6,11 +8,19 @@ function handleParallaxEffect(selector, speedFactor) {
   }
 }
 
-document.addEventListener("scroll", () => {
-  handleParallaxEffect(".poster__pictureartist", 0.2);
-  handleParallaxEffect(".poster__picture", 0.6);
-  handleParallaxEffect(".poster__pictureforms1", 0.4);
-  handleParallaxEffect(".poster__pictureforms2", 0.3);
-  handleParallaxEffect(".poster__pictureforms3", 0.2);
-  handleParallaxEffect(".poster__pictureforms4", 0.6);
-});
+function onScroll() {
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      handleParallaxEffect(".poster__pictureartist", 0.2);
+      handleParallaxEffect(".poster__picture", 0.6);
+      handleParallaxEffect(".poster__pictureforms1", 0.4);
+      handleParallaxEffect(".poster__pictureforms2", 0.3);
+      handleParallaxEffect(".poster__pictureforms3", 0.2);
+      handleParallaxEffect(".poster__pictureforms4", 0.6);
+      ticking = false;
+    });
+    ticking = true;
+  }
+}
+
+document.addEventListener("scroll", onScroll);
