@@ -1,7 +1,7 @@
 .poster {
   position: relative;
     width: 100%;
-    height: 80vh;
+    height: 72vh;
   
     &__picture,
     &__pictureforms1,
@@ -20,5 +20,17 @@
         object-fit: cover;
       }
     }
+}
+
+@media (max-width: 1024px) {
+  .poster {
+    height: 45vh;
   }
+}
+
+@media (max-width: 768px) {
+  .poster {
+    height: 35vh;
+  }
+}
   
