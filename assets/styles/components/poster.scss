@@ -13,6 +13,7 @@
       top: 0;
       width: 100%;
       max-width: 1600px;
+      will-change: transform;
   
       img {
         width: 100%;
@@ -24,13 +25,19 @@
 
 @media (max-width: 1024px) {
   .poster {
-    height: 45vh;
+    height: 50vh;
   }
 }
 
 @media (max-width: 768px) {
   .poster {
-    height: 35vh;
+    height: 40vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .poster {
+    height: 30vh;
   }
 }
   
