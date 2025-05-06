@@ -5,10 +5,7 @@
     overflow: hidden;
   
     &__picture,
-    &__pictureforms1,
-    &__pictureforms2,
-    &__pictureforms3,
-    &__pictureforms4 {
+    &__pictureform {
       position: absolute;
       z-index: -1;
       top: 0;
