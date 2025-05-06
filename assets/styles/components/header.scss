@@ -34,7 +34,7 @@
             text-decoration: none;
             color: #fdfdff;
             font-weight: 600;
-            font-size: 24px;
+            font-size: 18px;
         }
 
         &__item{
@@ -85,15 +85,21 @@
 
         .navbar__menu {
             position: fixed;
+            flex-direction: column;
+            background-color: #0c0c0d;
+            text-align: center;
+            align-items: baseline;
+            padding: 24px;
             height: 100%;
             right: -100%;
             gap: 0;
             top: 40px;
-            flex-direction: column;
-            background-color: #0c0c0d;
             width: 100%;
-            text-align: center;
             transition: 0.3s;
+            
+            a {
+                font-size: 32px;
+            }
 
             &__item {
                 margin: 16px 0;
