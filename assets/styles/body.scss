@@ -1,11 +1,10 @@
-
 body {
     background-color: #0d221e;
     font-family: "Fira Sans Extra Condensed", sans-serif;
     scroll-behavior: smooth;
-    cursor: url;
-}
+    cursor: url('/pictures/cursor_anaxa.png'), auto;
 
+}
 
 body.preload * {
     -webkit-transition: none !important;

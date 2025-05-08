@@ -1,13 +1,17 @@
-import './components/Navigation.js';
-import './components/Header';
+import { mainNavigation } from './components/Navigation';
 import './components/Poster';
 
+window.addEventListener('DOMContentLoaded',() => {
+    document.body.classList.remove ('preload');
+    const menu = new mainNavigation;
 
+    menu.createMenu();
+})
 
 
 /*!
 * preload class
 */
-window.onload = function(e){
-    document.body.classList.remove ('preload');
-}
+// window.onload = function(e){
+    
+// }

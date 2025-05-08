@@ -15,11 +15,21 @@
     &__logo {
         display: flex;
         align-items: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
 
-        img {
+        &__default {
+            display: block;
+            width: 27px;
             height: 30px;
-            width: auto;
-            margin: 5px 0px;
+            background-image: url('/pictures/logo/logo_white.webp');
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: background-image 0.3s ease;
+      
+            &:hover {
+              background-image: url('/pictures/logo/logo_anaxa.webp');
+            }
         }
     }
 
@@ -34,7 +44,7 @@
             text-decoration: none;
             color: #fdfdff;
             font-weight: 600;
-            font-size: 24px;
+            font-size: 18px;
         }
 
         &__item{
@@ -43,10 +53,25 @@
         }
 
         &__link {
-            transition: color 0.7s ease;
+            transition: color 0.3s ease;
+
+            &:after {
+                content: "";
+                display: block;
+                background-color: #338577;
+                border-radius: 20px;
+                height: 2px;
+                width: 0;
+                left: 0;
+                transition: 0.3s;
+            }
 
             &:hover {
                 color: #338577;
+            }
+
+            &:hover:after {
+                width: 100%;
             }
         }
     }
@@ -109,9 +134,6 @@
             }
         }
 
-        .navbar__menu.active {
-            right: 0;
-        }    
         
         .navbar__menu .bottom-image {
             display: block;
@@ -125,5 +147,18 @@
                 object-fit: cover;
             }
         }
+    }
+}
+
+
+html.has-menu-opened {
+    @media (max-width: 1024px) {
+        body {
+            overflow: hidden;
+        }
+
+        .navbar__menu {
+            right: 0;
+        }    
     }
 }
