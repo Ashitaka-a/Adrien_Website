@@ -29,12 +29,16 @@
     }
 }
 
+.eidolons-wrapper {
+    background-color: #0c0c0d;
+    z-index: 1;
+    position: relative;
+}
+
 .eidolons {
     position: relative;
     width: 100%;
     height: 650px;
-    background-color: #0c0c0d;
-    z-index: 1;
 
         &__items {
             position: absolute;
