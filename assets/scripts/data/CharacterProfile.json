@@ -1,0 +1,38 @@
+[
+  {
+    "id": 12,
+    "name": "Lunaria",
+    "evolutions": [
+      {
+        "image": "https://example.com/lunaria-stage1.jpg",
+        "title": "Apprentie des Lunes",
+        "desc": "Lunaria débute son voyage avec une simple robe céleste."
+      },
+      {
+        "image": "https://example.com/lunaria-stage2.jpg",
+        "title": "Gardienne Astrale",
+        "desc": "Elle canalise l'énergie des étoiles pour protéger les siens."
+      },
+      {
+        "image": "https://example.com/lunaria-stage3.jpg",
+        "title": "Reine Cosmique",
+        "desc": "Sa puissance atteint son apogée, contrôlant les constellations."
+      }
+    ],
+    
+    "materials": [
+      {
+        "image": "https://example.com/fragment-lunaire.png",
+        "total": "20"
+      },
+      {
+        "image": "https://example.com/essence-etoile.png",
+        "total": "10"
+      },
+      {
+        "image": "https://example.com/plume-celeste.png",
+        "total": "5"
+      }
+    ]
+  }
+]
